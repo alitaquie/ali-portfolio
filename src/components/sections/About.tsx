@@ -25,9 +25,9 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
     <div className="max-w-[250px] w-full xs:w-[250px]">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className="green-pink-gradient shadow-card w-full rounded-[20px] p-[1px]"
+        className="peach-gradient shadow-card w-full rounded-[20px] p-[1px]"
       >
-        <div className="bg-tertiary flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] px-12 py-5">
+        <div className="bg-[#1a1a1a]/80 backdrop-blur-sm flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] px-12 py-5">
           <img
             src={icon}
             alt="web-development"

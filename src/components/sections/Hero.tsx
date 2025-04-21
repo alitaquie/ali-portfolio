@@ -12,12 +12,12 @@ const Hero = () => {
       >
         <div className="mt-5 flex flex-col items-center justify-center ml-[-60px]">
           <div className="h-5 w-5 rounded-full bg-[#4A90E2]" />
-          <div className="h-40 w-1 sm:h-80 bg-gradient-to-b from-[#4A90E2] to-[#87CEEB]" />
+          <div className="h-40 w-1 sm:h-80 bg-gradient-to-b from-[#4A90E2] via-[#87CEEB] to-[#E0F4FF]" />
         </div>
 
         <div className="ml-[-15px]">
           <h1 className={`${styles.heroHeadText} text-white`}>
-             <span className="text-[#915EFF]">{config.hero.name}</span>
+             Hey, I'm <span className="bg-gradient-to-r from-[#87CEEB] to-[#4A90E2] inline-block text-transparent bg-clip-text">{config.hero.name}</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
             {config.hero.p[0]} <br className="hidden sm:block" />
