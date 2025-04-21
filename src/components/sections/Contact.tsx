@@ -71,7 +71,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="bg-black-100 flex-[0.75] rounded-2xl p-8"
+        className="bg-gradient-to-br from-[#020a17] to-[#050f1f] backdrop-blur-lg flex-[0.75] rounded-2xl p-8 border border-[#2f80ed]/10 hover:border-[#2f80ed]/20 transition-all duration-300 shadow-lg hover:shadow-xl"
       >
         <Header useMotion={false} {...config.contact} />
 
@@ -95,7 +95,7 @@ const Contact = () => {
                   value={form[`${input}`]}
                   onChange={handleChange}
                   placeholder={placeholder}
-                  className="bg-tertiary placeholder:text-secondary rounded-lg border-none px-6 py-4 font-medium text-white outline-none"
+                  className="bg-[#0a192f]/50 placeholder:text-[#2f80ed]/50 rounded-lg border border-[#2f80ed]/10 px-6 py-4 font-medium text-white outline-none focus:border-[#2f80ed]/30 transition-all duration-300"
                   {...(input === "message" && { rows: 7 })}
                 />
               </label>
@@ -103,7 +103,7 @@ const Contact = () => {
           })}
           <button
             type="submit"
-            className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none"
+            className="bg-gradient-to-r from-[#2f80ed] to-[#2f80ed]/80 hover:from-[#2f80ed]/90 hover:to-[#2f80ed]/70 w-fit rounded-xl px-8 py-3 font-bold text-white shadow-lg hover:shadow-xl transition-all duration-300"
           >
             {loading ? "Sending..." : "Send"}
           </button>

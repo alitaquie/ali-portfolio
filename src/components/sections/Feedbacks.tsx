@@ -17,9 +17,9 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 xs:w-[320px] w-full rounded-3xl p-10"
+    className="bg-gradient-to-br from-[#0a192f]/90 to-[#0a192f]/70 backdrop-blur-lg xs:w-[320px] w-full rounded-3xl p-10 border border-[#2f80ed]/10 hover:border-[#2f80ed]/20 transition-all duration-300 shadow-lg hover:shadow-xl"
   >
-    <p className="text-[48px] font-black text-white">"</p>
+    <p className="text-[48px] font-black text-[#2f80ed]">"</p>
 
     <div className="mt-1">
       <p className="text-[18px] tracking-wider text-white">{testimonial}</p>
@@ -29,7 +29,7 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
           <p className="text-[16px] font-medium text-white">
             <span className="blue-text-gradient">@</span> {name}
           </p>
-          <p className="text-secondary mt-1 text-[12px]">
+          <p className="text-[#2f80ed] mt-1 text-[12px]">
             {designation} of {company}
           </p>
         </div>
@@ -37,7 +37,7 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
         <img
           src={image}
           alt={`feedback_by-${name}`}
-          className="h-10 w-10 rounded-full object-cover"
+          className="h-10 w-10 rounded-full object-cover border-2 border-[#2f80ed]/20 hover:border-[#2f80ed]/40 transition-all duration-300"
         />
       </div>
     </div>
@@ -46,9 +46,9 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
 
 const Feedbacks = () => {
   return (
-    <div className="bg-black-100 mt-12 rounded-[20px]">
+    <div className="bg-[#020a17] mt-12 rounded-[20px]">
       <div
-        className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}
+        className={`${styles.padding} bg-[#050f1f] min-h-[300px] rounded-2xl`}
       >
         <Header useMotion={true} {...config.sections.feedbacks} />
       </div>

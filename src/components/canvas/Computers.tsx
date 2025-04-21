@@ -19,7 +19,7 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
         shadow-mapSize={1024}
       />
       <pointLight position={[10, 10, 10]} intensity={3} />
-      <ambientLight intensity={1} />
+      <ambientLight intensity={2} />
       <group rotation={[0, Math.PI / 2.37, 0]}>
   <primitive
     object={computer.scene}
