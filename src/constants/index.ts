@@ -25,8 +25,6 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
   shopify,
   carrent,
   jobit,
@@ -51,19 +49,19 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Full Stack Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Ai/ML Integration",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Web Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Project Management",
     icon: creator,
   },
 ];
@@ -125,55 +123,31 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
+    title: "Software Engineer Intern",
+    companyName: "SkyIT Services",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jun 2024 - Sep 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and tested scalable APIs using Python, Django, Django REST Framework, and MySQL Workbench, contributing directly to SkyIT’s core software",
+      "Automated health checks for 450+ endpoints, reducing response times by 20% and improving system reliability through real-time performance tracking",
+      "Designed a Postman testing suite to streamline QA across all APIs, aiding in the resolution of 20%+ of total backend bugs",
+      "Collaborated with frontend/backend teams to coordinate bug fixes, resolve login issues, and organize task flow using Kanban boards and weekly syncs",
+      "Participated in daily standups and code reviews, contributing to clean, production-ready code and improved backend documentation via Google Sheets and CSV mappings"
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "Software Developer Senior Intern",
+    companyName: "Digital NEST",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led the end-to-end development of an ML-powered animation system using Python, Node.js, Docker, and SQLite, built on top of Meta’s open-source machine learning model",
+      "Extended Meta’s model to support quadruped animal drawings, applying geometric joint remapping, angle validation, and dynamic error correction techniques",
+      "Integrated OpenAI’s Vision API to classify input drawings as human or animal, guiding the animation pipeline with intelligent routing",
+      "Developed the core work handler script that orchestrates the entire animation pipeline — from image classification and annotation to rendering and output delivery",
+      "Managed sprints and project planning using JIRA and GitHub Projects, while leading daily standups and conducting code reviews to ensure high system reliability"
     ],
   },
 ];

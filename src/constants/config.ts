@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Ali Taquie",
+    fullName: "Ali Taquie",
+    email: "alitaquiedev@gmail.com",
   },
   hero: {
     name: "Ali",
-    p: ["I'm a full-stack software developer." ],
+    p: ["I'm a full-stack software engineer." ],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +67,11 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a recent Computer Science graduate from UC Santa Cruz, passionate about building scalable software and weaving AI/ML into real-world applications. 
+      I’ve led development teams, shipped full-stack products, and built award-winning tools that combine performance with user impact. 
+      Whether it’s developing backends with FastAPI, building responsive frontends with React, 
+      or adapting AI models for creative tech,I thrive at the intersection of code, creativity, and collaboration. 
+      Always looking for the next challenge where I can build, learn, and make cool things that make a positive impact.`,
     },
     experience: {
       p: "What I have done so far",
