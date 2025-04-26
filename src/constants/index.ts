@@ -27,9 +27,12 @@ import {
   meta,
   shopify,
   carrent,
+  vastsupper,
   jobit,
   tripguide,
   threejs,
+  pacman,
+  http
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -181,20 +184,20 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "High-Note",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An AI-powered study assistant using NLP to analyze individual notes against class-wide contributions, delivering personalized feedback dashboards and AI-enhanced study guides to help students identify knowledge gaps",
     tags: [
       {
-        name: "react",
+        name: "NLP",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Google Gemini",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "FastAPI",
         color: "pink-text-gradient",
       },
     ],
@@ -202,20 +205,20 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "BlackBoard",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A mobile app merging professor reviews with social features, where instructors create classes, log attendance, and receive star-rating feedback; students register, submit course reviews, and everyone sees a calendar of upcoming sessions.",
     tags: [
       {
-        name: "react",
+        name: "mobile",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "React Native",
         color: "pink-text-gradient",
       },
     ],
@@ -223,26 +226,92 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Bird Watching App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A web app for bird enthusiasts to explore species densities on an interactive map with custom filters, log and manage sightings, track observation history with statistics, and view regional summaries and leaderboards.",
     tags: [
       {
-        name: "nextjs",
+        name: "Vue.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "SQLite",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "DataAnalytics",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
     sourceCodeLink: "https://github.com/",
   },
+  {
+    name: "The Vast Supper",
+    description:
+      "A hybrid exploration-cooking game where players gather ingredients, then craft dishes in a day/night cycle, balancing currency progression; satisfy locals’ requests or tackle alien dignitaries’ precise culinary challenges to unlock new regions",
+    tags: [
+      {
+        name: "GameDev",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSharp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Unity3D",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: vastsupper,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Pac-Man AI",
+    description:
+      "A reinforcement-learning Pac-Man AI suite implementing value iteration and Q-learning agents that compute optimal policies, then learn through trial-and-error, extended with approximate Q-learning for feature-based generalization to master maze navigation",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pathfinding",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pacman,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "HTTP Server",
+    description:
+      "An HTTP/1.1 server in C featuring a dispatcher and worker thread-pool, synchronized via thread-safe queues and reader-writer locks, enabling concurrent processing of 5,000+ connections with atomic, linearizable request handling and audit logging",
+    tags: [
+      {
+        name: "C",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "multi-threaded",
+        color: "green-text-gradient",
+      },
+      {
+        name: "POSIX",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: http,
+    sourceCodeLink: "https://github.com/",
+  },
+  
+
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };

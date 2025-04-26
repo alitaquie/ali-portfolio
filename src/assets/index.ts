@@ -26,6 +26,9 @@ import shopify from "./company/shopify.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import vastsupper from "./vast-supper.png";
+import pacman from "./pacman.gif";
+import http from "./http.png"
 
 export {
   logo,
@@ -51,9 +54,11 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
   tesla,
   carrent,
   jobit,
   tripguide,
+  vastsupper,
+  pacman,
+  http
 };
