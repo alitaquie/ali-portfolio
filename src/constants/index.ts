@@ -224,6 +224,7 @@ const projects: TProject[] = [
     ],
     image: jobit,
     sourceCodeLink: "https://github.com/",
+    videoDemoLink: "https://link-to-video-demo.com"
   },
   {
     name: "Bird Watching App",
