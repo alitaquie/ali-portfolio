@@ -17,7 +17,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   tags,
   image,
   sourceCodeLink,
-  videoDemoLink, // Add videoDemoLink to props
+  videoDemoLink,
 }) => {
   return (
     <motion.div
@@ -39,7 +39,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
                 alt={name}
                 className="h-full w-full rounded-2xl object-cover"
               />
-              <div className="card-img_hover absolute inset-0 m-3 flex flex-col justify-start items-end"> {/* Changed to justify-start for top alignment */}
+              <div className="card-img_hover absolute inset-0 m-3 flex flex-col justify-start items-end">
                 <div
                   onClick={() => window.open(sourceCodeLink, "_blank")}
                   className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
@@ -50,11 +50,10 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
                     className="h-1/2 w-1/2 object-contain"
                   />
                 </div>
-                {/* Video Demo Logo - only render if videoDemoLink exists */}
                 {videoDemoLink && (
                   <div
-                    onClick={() => window.open(videoDemoLink, "_blank")} // Open video demo link
-                    className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full mt-2" // Added margin-top for spacing
+                    onClick={() => window.open(videoDemoLink, "_blank")}
+                    className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full mt-2"
                   >
                     <img
                       src={videoDemo}
@@ -83,8 +82,6 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   );
 };
 
-
-
 const Works = () => {
   return (
     <>
@@ -99,8 +96,8 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {/* grid layout: 1col on mobile, 2 on sm, 3 on lg, with uniform gaps */}
-      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+      {/* grid layout: 1col on mobile, 2 on sm, 3 on lg; center cards on small screens */}
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 justify-items-center sm:justify-items-start">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
