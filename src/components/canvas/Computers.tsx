@@ -3,10 +3,11 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../layout/Loader";
+type Triple = [number, number, number];
 
 type ComputersProps = {
   scale: number;
-  position: [x: number, y: number, z: number];
+  position:Triple;
 };
 
 const Computers: React.FC<ComputersProps> = ({ scale, position }) => {
@@ -48,11 +49,16 @@ const ComputersCanvas = () => {
     return 0.65;
   };
   // adjusted positions for the new sizes
-  const getPosition = (w: number) => {
-    if (w < 400) return [0, -2.0, -1.6];
-    if (w < 600) return [0, -2.5, -1.8];
-    if (w < 800) return [0, -3.0, -1.6];
-    return [0, -3.5, -1.3];
+  const getPosition = (w: number): Triple => {
+    if (w < 400) {
+      return [0, -2.0, -1.6];
+    } else if (w < 600) {
+      return [0, -2.5, -1.8];
+    } else if (w < 800) {
+      return [0, -3.0, -1.6];
+    } else {
+      return [0, -3.5, -1.3];
+    }
   };
 
   const scale = getScale(width);
