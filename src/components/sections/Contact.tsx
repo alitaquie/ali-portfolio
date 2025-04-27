@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin } from "react-icons/fa";
 
 import { EarthCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";
@@ -26,13 +27,13 @@ const Contact = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | undefined
   ) => {
-    if (e === undefined) return;
+    if (!e) return;
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement> | undefined) => {
-    if (e === undefined) return;
+    if (!e) return;
     e.preventDefault();
     setLoading(true);
 
@@ -53,33 +54,46 @@ const Contact = () => {
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
           setForm(INITIAL_STATE);
         },
         (error) => {
           setLoading(false);
-
-          console.log(error);
+          console.error(error);
           alert("Something went wrong.");
         }
       );
   };
 
+  const linkedinUrl = "https://www.linkedin.com/in/ali-taquie-82481b17a/";
+
   return (
-    <div
-      className={`flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row`}
-    >
+    <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="bg-gradient-to-br from-[#020a17] to-[#050f1f] backdrop-blur-lg flex-[0.75] rounded-2xl p-8 border border-[#2f80ed]/10 hover:border-[#2f80ed]/20 transition-all duration-300 shadow-lg hover:shadow-xl"
       >
+        {/* Section header */}
         <Header useMotion={false} {...config.contact} />
 
+        {/* LinkedIn icon */}
+        <div className="mt-4 mb-6">
+          <a
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-white hover:opacity-80"
+          >
+            <FaLinkedin className="h-6 w-6" />
+            <span className="underline">Connect on LinkedIn</span>
+          </a>
+        </div>
+
+        {/* Contact form */}
         <form
           // @ts-expect-error
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-6 flex flex-col gap-8"
         >
           {Object.keys(config.contact.form).map((input) => {
             const { span, placeholder } =
@@ -92,7 +106,7 @@ const Contact = () => {
                 <Component
                   type={input === "email" ? "email" : "text"}
                   name={input}
-                  value={form[`${input}`]}
+                  value={form[input]}
                   onChange={handleChange}
                   placeholder={placeholder}
                   className="bg-[#0a192f]/50 placeholder:text-[#2f80ed]/50 rounded-lg border border-[#2f80ed]/10 px-6 py-4 font-medium text-white outline-none focus:border-[#2f80ed]/30 transition-all duration-300"
