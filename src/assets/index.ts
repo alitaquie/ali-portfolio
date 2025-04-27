@@ -29,7 +29,9 @@ import tripguide from "./tripguide.png";
 import vastsupper from "./vast-supper.png";
 import pacman from "./pacman.gif";
 import http from "./http.png"
-
+import shahab from "./shahab.jpg"
+import alex from "./alex.jpg"
+import cruzhacks from "./cruzhacks_logo.jpg"
 export {
   logo,
   backend,
@@ -55,10 +57,13 @@ export {
   meta,
   shopify,
   tesla,
+  shahab,
   carrent,
   jobit,
   tripguide,
   vastsupper,
   pacman,
-  http
+  http,
+  alex,
+  cruzhacks
 };

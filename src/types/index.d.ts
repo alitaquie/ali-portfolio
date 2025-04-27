@@ -16,6 +16,7 @@ export type TTestimonial = {
   designation: string;
   company: string;
   image: string;
+  type?: "testimonial" | "award";
 } & Required<Pick<TCommonProps, "name">>;
 
 export type TProject = {

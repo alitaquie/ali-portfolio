@@ -40,7 +40,7 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Ali Taquie",
+    title: "Ali | Developer Portfolio",
     fullName: "Ali Taquie",
     email: "alitaquiedev@gmail.com",
   },
@@ -84,11 +84,7 @@ export const config: TConfig = {
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `The following projects demonstrate my versatility across domains in Computer Science. From full-stack web applications and high-performance backend servers to game experiences and AI-powered solutions. Each entry includes a concise overview, with links to code repositories and live demos, offering proof of my ability to solve problems, embrace diverse technologies, and deliver projects from concept to completion`,
     },
   },
 };
