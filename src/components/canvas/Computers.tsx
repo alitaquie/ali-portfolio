@@ -49,10 +49,10 @@ const ComputersCanvas = () => {
   };
   // adjusted positions for the new sizes
   const getPosition = (w: number) => {
-    if (w < 400) return [0, -2.0, -1.6] as const;
-    if (w < 600) return [0, -2.5, -1.8] as const;
-    if (w < 800) return [0, -3.0, -1.6] as const;
-    return [0, -3.5, -1.3] as const;
+    if (w < 400) return [0, -2.0, -1.6];
+    if (w < 600) return [0, -2.5, -1.8];
+    if (w < 800) return [0, -3.0, -1.6];
+    return [0, -3.5, -1.3];
   };
 
   const scale = getScale(width);

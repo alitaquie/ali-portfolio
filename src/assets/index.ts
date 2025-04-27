@@ -56,7 +56,6 @@ export {
   threejs,
   meta,
   shopify,
-  tesla,
   shahab,
   carrent,
   jobit,
