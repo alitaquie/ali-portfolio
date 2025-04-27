@@ -292,7 +292,7 @@ const projects: TProject[] = [
   {
     name: "HTTP Server",
     description:
-      "An HTTP/1.1 server in C featuring a dispatcher and worker thread-pool, synchronized via thread-safe queues and reader-writer locks, enabling concurrent processing of 5,000+ connections with atomic, linearizable request handling and audit logging",
+      "An HTTP/1.1 server in C featuring a dispatcher and worker thread-pool, synchronized via thread-safe queues and reader-writer locks, enabling processing of concurrent connections with atomic, linearizable request handling and audit logging",
     tags: [
       {
         name: "C",
