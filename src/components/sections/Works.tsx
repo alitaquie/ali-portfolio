@@ -79,7 +79,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
 const Works = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.works} />
+      <Header useMotion={false} {...config.sections.works} />
 
       <div className="flex w-full">
         <p className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]">
