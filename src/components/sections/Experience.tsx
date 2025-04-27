@@ -72,7 +72,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
 const Experience = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.experience} />
+      <Header useMotion={false} {...config.sections.experience} />
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
