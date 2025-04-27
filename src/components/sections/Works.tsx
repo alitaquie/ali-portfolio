@@ -1,17 +1,14 @@
+import React from "react";
 import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
-
 import { github } from "../../assets";
 import { SectionWrapper } from "../../hoc";
 import { projects } from "../../constants";
-import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { TProject } from "../../types";
 import videoDemo from "../../assets/videoDemo.png"; 
 
 const ProjectCard: React.FC<{ index: number } & TProject> = ({
-  index,
   name,
   description,
   tags,
@@ -20,10 +17,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   videoDemoLink,
 }) => {
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="w-full max-w-[300px]"
-    >
+    <div className="w-full max-w-[300px] mx-auto">
       <Tilt
         glareEnable
         tiltEnable
@@ -78,7 +72,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
           </div>
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
 
@@ -88,16 +82,13 @@ const Works = () => {
       <Header useMotion={true} {...config.sections.works} />
 
       <div className="flex w-full">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]"
-        >
+        <p className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]">
           {config.sections.works.content}
-        </motion.p>
+        </p>
       </div>
 
-      {/* grid layout: 1col on mobile, 2 on sm, 3 on lg; center cards on small screens */}
-      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 justify-items-center sm:justify-items-start">
+      {/* 1col on mobile (centered), 2 on sm, 3 on lg */}
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center sm:justify-items-stretch gap-x-8 gap-y-12">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
