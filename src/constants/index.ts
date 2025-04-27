@@ -32,7 +32,10 @@ import {
   tripguide,
   threejs,
   pacman,
-  http
+  http,
+  shahab,
+  alex,
+  cruzhacks
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -158,27 +161,28 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Ali's technical proficiency in backend technologies, including Django REST framework and Python was evident from day one. He skillfully applied this knowledge making valuablecontributions to multiple projects. Ali's ability to adapt to new technologies, coupled with his problem-solving skills, marked him as a standout member of our team",
+    name: "Shahab Seyedi",
+    designation: "Executive Director",
+    company: "SkyIT Services",
+    image: shahab
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Ali is a great engineer and a great communicator, with a rare talent stack that makes him deadly. First success of many to come his way and if you need to hire a great engineer, I highly recommend him.",
+    name: "Alex Rodriguez",
+    designation: "Lead Software Developer",
+    company: "Digital NEST",
+    image: alex,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Won 1st Place at CruzHacks 2025 for 'Best Education Hack'",
+    name: "Cruzhacks",
+    designation: "First-Place Winner",
+    company: "",
+    image: cruzhacks,
+    type: "award", 
   },
 ];
 
@@ -202,7 +206,8 @@ const projects: TProject[] = [
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/alitaquie/High-Note",
+    videoDemoLink: "https://devpost.com/software/high-note"
   },
   {
     name: "BlackBoard",
@@ -223,8 +228,8 @@ const projects: TProject[] = [
       },
     ],
     image: jobit,
-    sourceCodeLink: "https://github.com/",
-    videoDemoLink: "https://link-to-video-demo.com"
+    sourceCodeLink: "https://github.com/alitaquie/Blackboard-Tutor-Scheduling",
+    videoDemoLink: "https://www.youtube.com/watch?v=ITTPUm1-Wlc"
   },
   {
     name: "Bird Watching App",
@@ -240,12 +245,13 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "DataAnalytics",
+        name: "Visualization",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/alitaquie/Bird-Watching-App",
+    videoDemoLink:"https://www.youtube.com/watch?v=hheg0no_uQU"
   },
   {
     name: "The Vast Supper",
@@ -266,7 +272,8 @@ const projects: TProject[] = [
       },
     ],
     image: vastsupper,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/alitaquie/The-Vast-Supper",
+    videoDemoLink: "https://www.youtube.com/watch?v=oIeRLZUiCp4&t=58s"
   },
   {
     name: "Pac-Man AI",
@@ -287,7 +294,7 @@ const projects: TProject[] = [
       },
     ],
     image: pacman,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/alitaquie/Pacman-Ai",
   },
   {
     name: "HTTP Server",
@@ -308,7 +315,7 @@ const projects: TProject[] = [
       },
     ],
     image: http,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/alitaquie/Multi-Threaded-HTTP-Server",
   },
   
 

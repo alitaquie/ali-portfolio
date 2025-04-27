@@ -12,13 +12,9 @@ import {
   StarsCanvas,
 } from "./components";
 import { useEffect } from "react";
-import { config } from "./constants/config";
 
 const App = () => {
   useEffect(() => {
-    if (document.title !== config.html.title) {
-      document.title = config.html.title;
-    }
   }, []);
 
   return (
